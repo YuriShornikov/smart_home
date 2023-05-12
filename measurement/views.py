@@ -6,6 +6,7 @@ from .models import Sensor
 from .serializers import MeasurementSerializer, SensorSerializer
 
 
+
 class Sensors(ListCreateAPIView):
     queryset = Sensor.objects.all()
     serializer_class = SensorSerializer
